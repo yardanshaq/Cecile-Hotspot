@@ -1,0 +1,163 @@
+.fontQ{
+    font-family: 'Rubik', sans-serif
+}
+.card_shadow{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.short_shadow{
+    box-shadow: 0 3px 6px rgba(0 0 0 / 10%);
+}
+.center_shadow{
+    box-shadow: 0px 0px 51px -15px rgb(0 0 0 / 20%);
+}
+.or {
+    display: block;
+    position: relative;
+    line-height: 0;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+}
+.or:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-top: 2px dotted var(--border);
+}
+
+
+.input, select {
+    transition: border 0.2s ease-in-out;
+    min-width: 280px;
+}
+.input::placeholder{
+    font-size: 0.8rem;
+    opacity: 0;
+}
+.input:focus::placeholder{
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+.input:focus + .label,
+.input:active + .label,
+.input.filled + .label{
+    font-size: 0.75rem;
+    transition: all 0.2s ease-out;
+    top: -0.65rem;
+    background-color: #fff;
+    color: #1f2937;
+    padding: 0 5px 0 5px;
+    margin: 0 5px 0 5px;
+}
+.label {
+    transition: all 0.2s ease-out;
+    top: 0.4rem;
+    left: 0;
+}
+.input:valid + .label{
+    font-size: 0.75rem;
+    transition: all 0.2s ease-out;
+    top: -0.65rem;
+    background-color: #fff;
+    color: #1f2937;
+    padding: 0 5px 0 5px;
+    margin: 0 5px 0 5px;
+}
+::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+--bg-opacity: 1;
+background-color: #f7fafc;
+background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+
+::-webkit-scrollbar-thumb {
+--bg-opacity: 1;
+background-color: #edf2f7;
+background-color: rgba(237, 242, 247, var(--bg-opacity));
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 0.25rem;
+}
+
+#formBantuan input,
+#formBantuan select,
+#formBantuan textarea {
+    color: #374151; /* text-gray-700 */
+    border: 2px solid #e5e7eb; /* ring-gray-200 */
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+#formBantuan input:focus,
+#formBantuan select:focus,
+#formBantuan textarea:focus {
+    border-color: #14b8a6; /* teal-600 */
+}
+
+/* Placeholder style diperbesar */
+#formBantuan input::placeholder,
+#formBantuan textarea::placeholder {
+    font-size: 0.9rem;
+    color: #9ca3af; /* text-gray-400 */
+}
+
+/* Label animasi */
+#formBantuan .label {
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    margin-left: 0.25rem;
+    padding: 0 0.15rem; /* Lebih ramping */
+    left: 0.55rem;
+    background-color: white;
+    color: #4b5563; /* text-gray-600 */
+    font-size: 1rem;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+}
+
+#formBantuan input:focus + .label,
+#formBantuan input:valid + .label,
+#formBantuan select:focus + .label,
+#formBantuan select:valid + .label,
+#formBantuan textarea:focus + .label,
+#formBantuan textarea:valid + .label {
+    color: #14b8a6; /* text-teal-600 */
+    top: -0.85rem;
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Tombol form bantuan */
+#formBantuan button[type="submit"] {
+    background-color: #14b8a6; /* teal-600 */
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#formBantuan button[type="submit"]:hover {
+    background-color: #0d9488; /* teal-700 */
+}

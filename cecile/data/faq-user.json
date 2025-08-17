@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "question": "Apakah akun saya bisa digunakan di perangkat lain?",
+        "answer": "Tergantung jenis akun anda. Jika akun anda adalah sharing akun, maka bisa digunakan di beberapa perangkat secara bersamaan. Jika tidak, perangkat sebelumnya akan otomatis logout.",
+        "timestamp": "7 Hari yang lalu"
+    },
+    {
+        "id": 2,
+        "question": "Apakah saya bisa mengganti perangkat saat sedang login?",
+        "answer": "Ya, namun jika akun anda bukan sharing akun, maka perangkat sebelumnya harus logout jika ingin login di perangkat baru.",
+        "timestamp": "7 Hari yang lalu"
+    },
+    {
+        "id": 3,
+        "question": "Bagaimana cara menambah masa aktif akun saya?",
+        "answer": "Anda dapat menambah masa aktif akun dengan menghubungi Admin melalui halaman status atau WhatsApp Admin yang menghubungi anda.",
+        "timestamp": "7 Hari yang lalu"
+    }
+]
